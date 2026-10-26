@@ -6,14 +6,14 @@
 
 **[차량 화면 열기](https://lkjh098-cell.github.io/hawoncall-demo/)** · **[보호자 화면 열기](https://lkjh098-cell.github.io/hawoncall-demo/?view=guardian)**
 
-실제 OpenStreetMap 지도와 저장된 서울 도로 경로 위에서 차량 화면을 시연합니다. 차량 위치·기어·문·좌석·학생·완료 기록은 가상 데이터입니다. 시연 화면은 실제 현대차·Pleos OS의 공식 화면이 아니며, 실행 중인 차량을 제어하지 않습니다. 인터넷 지도 타일 연결이 필요합니다.
+현대자동차그룹이 2026년 4월 공개한 Pleos Connect 화면 배치를 참조해 상단 상태바·좌측 주행 뷰·우측 입체 지도·하단 공조 및 앱 바를 재구성했습니다. [공식 참조 자료](DESIGN_REFERENCE.md)를 확인하세요. 지도는 OpenFreeMap의 실제 OpenStreetMap 기반 벡터 자료와 저장된 서울 도로 경로를 사용합니다. 차량 위치·기어·문·좌석·학생·완료 기록은 가상 데이터입니다. 시연 화면은 실제 현대차·Pleos OS의 공식 화면이 아니며, 실행 중인 차량을 제어하지 않습니다. 인터넷 지도 연결과 WebGL을 지원하는 브라우저가 필요합니다.
 
-기관 유형과 등교·하교/등원·하원 방향을 선택하고 재생합니다. 접근한 뒤 발표자가 P 정차를 선택하고, 차량 화면에서 보호자가 실제 탑승 또는 인계를 확인하는 과정을 체험합니다. 브라우저의 보호자 화면은 같은 출처·브라우저에서 열린 시연 상태를 공유하며 실제 휴대폰 서버 연동이 아닙니다. 실시간 교통·도로 통제·정차 허용 여부를 반영한 운전 안내로 사용하지 않습니다.
+화면 아래 **시연 조작**을 열어 기관 유형과 등교·하교/등원·하원 방향을 선택하고 재생합니다. 하단 h 아이콘으로 하원콜을 펼치면 내비 옆의 분할 앱 창이 됩니다. 접근한 뒤 발표자가 P 정차를 선택하고, 차량 화면에서 보호자가 실제 탑승 또는 인계를 확인하는 과정을 체험합니다. 브라우저의 보호자 화면은 같은 출처·브라우저에서 열린 시연 상태를 공유하며 실제 휴대폰 서버 연동이 아닙니다. 실시간 교통·도로 통제·정차 허용 여부를 반영한 운전 안내로 사용하지 않습니다.
 
 ## 소스 구성
 
 - `index.html`: GitHub Pages에서 바로 실행하는 통합 시연 화면.
-- [web-source-v0.8.zip](web-source-v0.8.zip): 브라우저 시연 소스, 실제 경로 자료, 테스트와 빌드 도구.
+- [web-source-v0.9.zip](web-source-v0.9.zip): 브라우저 시연 소스, 실제 경로 자료, 테스트와 빌드 도구.
 - [native-source-v0.7.zip](native-source-v0.7.zip): Android 차량 앱·보호자 라이브러리·서버 소스. 실제 차량 신호는 이 압축 파일의 Pleos 어댑터에서 담당합니다.
 
 GitHub Pages는 HTML/JS 화면을 제공하며 Node/SQLite 서버나 Android APK를 실행하지 않습니다. 실제 차량·모바일 운영은 별도 HTTPS 서버와 차량 권한·설치·실기 검증이 필요합니다. 마이현대 공식 앱에 통합된 결과는 아닙니다. 개발용 APK·AAR와 기기 연결 DB·토큰·비밀번호는 저장소에 포함하지 않습니다.
@@ -24,7 +24,7 @@ GitHub Pages는 HTML/JS 화면을 제공하며 Node/SQLite 서버나 Android APK
 
 **참고 위치 117곳은 승하차 허용 지점이 아닙니다. 현재 현장·허가가 검증된 지점은 0곳입니다.** 운영자가 허용 근거를 검증한 뒤에만 선택과 대기시간 학습이 열립니다. 반복 정차나 학습으로 허가를 만들어내지 않습니다. 브라우저 시연에서 실제 허용 지점을 가장하지 않습니다.
 
-v0.7 네이티브/서버 자동 검사 157건이 통과했습니다. 실제 Pleos 차량에서의 설치·주행 검증은 아직 하지 않았습니다. 웹 모델·지도·동기화 검사 51건도 통과했습니다. 웹 모델과 Kotlin 차량 엔진은 서로 다른 코드이며 브라우저 결과를 차량의 안전 판정에 사용하지 않습니다.
+v0.7 네이티브/서버 자동 검사 157건이 통과했습니다. 실제 Pleos 차량에서의 설치·주행 검증은 아직 하지 않았습니다. 웹 모델·지도·동기화 검사 53건도 통과했습니다. 웹 모델과 Kotlin 차량 엔진은 서로 다른 코드이며 브라우저 결과를 차량의 안전 판정에 사용하지 않습니다.
 
 ## GitHub Pages 설정
 
@@ -32,4 +32,4 @@ v0.7 네이티브/서버 자동 검사 157건이 통과했습니다. 실제 Pleo
 
 ## 출처와 라이선스
 
-지도 © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright). 화면의 출처 표시를 유지합니다. 타일을 사전 수집·오프라인 재배포하지 않습니다. [타일 사용 정책](https://operations.osmfoundation.org/policies/tiles/)을 따릅니다. 저장 경로는 [OSRM](https://project-osrm.org/docs/v5.24.0/api/#route-service)에서 2026-10-25 조회한 시연 자료입니다. Leaflet 1.9.4는 BSD-2-Clause이며 해당 라이선스를 `web/screen/vendor/`에 유지합니다. 서울 데이터와 경계의 별도 라이선스·출처는 `native/server/data/`를 따릅니다.
+지도 © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright). 화면의 출처 표시를 유지합니다. 지도 제공처의 [사용 안내](https://openfreemap.org/quick_start/)에 따라 화면에 필요한 지도 자료만 요청하고 사전 수집 기능은 제공하지 않습니다. 저장 경로는 [OSRM](https://project-osrm.org/docs/v5.24.0/api/#route-service)에서 2026-10-25 조회한 시연 자료입니다. 현재 지도 엔진은 MapLibre GL JS 5.6.2이며 BSD-3-Clause 및 번들 라이선스를 따릅니다. OpenFreeMap·Positron/CARTO 스타일 라이선스와 함께 `web/screen/vendor/`에 유지합니다. 서울 데이터와 경계의 별도 라이선스·출처는 `native/server/data/`를 따릅니다.
