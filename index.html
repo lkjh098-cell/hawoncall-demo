@@ -72,6 +72,10 @@
 @media(max-width:650px){.route-planner-dialog{max-width:calc(100vw - 20px)}.route-planner-dialog .rp-actions{bottom:-20px}}
 .route-planner-dialog .rp-actions button{flex:1;width:auto;white-space:nowrap;min-width:0;font-size:14px;padding:12px 16px}
 .route-planner-dialog .rp-actions .primary-button{flex:1.3}
+
+/* Status-bar entry stays reachable above all map cards at every viewport size. */
+.vehicle-status .route-planner-open{position:static;display:inline-flex;align-items:center;justify-content:center;min-width:94px;min-height:32px;height:32px;padding:0 10px;margin-left:4px;border-radius:10px;box-shadow:none;font-size:13px;background:#eaf3fb;color:#21608a}
+.vehicle-status .route-planner-open[hidden]{display:none}
 </style></head>
 <body><div class="app-shell">
 <main class="cockpit" id="vehicleView" aria-label="Pleos Connect의 화면 구성을 재현한 가상 차량 시연">
@@ -2356,6 +2360,7 @@ function applyRoute(route,{remote=false}={}){
  return true;
 }
 routePlanner=mountRoutePlanner({getRoute:()=>activeRoute,getJourney:()=>view(state),onApply:applyRoute,toast,onOpen:()=>{operations.stop();openShellApp('navigation');}});
+$('.system-left').append($('#routePlannerOpen'));
 if(guardianOnly)$('#routePlannerOpen').hidden=true;
 const searchIcon=$('.system-left > svg');if(searchIcon){const searchButton=document.createElement('button');searchButton.className='status-place-search';searchButton.setAttribute('aria-label','출발지 도착지 검색');searchIcon.replaceWith(searchButton);searchButton.append(searchIcon);searchButton.onclick=()=>{if(!guardianOnly)routePlanner.open();};}
 function publish(){if(guardianOnly)return;const p=packDemoState(state,source,revision=Math.max(Date.now(),revision+1));try{localStorage.setItem(DEMO_STORAGE_KEY,JSON.stringify(p));}catch{storageAvailable=false;}try{channel?.postMessage(p);}catch{}lastPublish=performance.now();}
