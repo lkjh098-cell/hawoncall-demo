@@ -28,6 +28,8 @@
 @media(max-height:650px) and (min-width:801px){.live-meeting-card{width:235px;padding:10px;bottom:83px}.live-adopt{margin:7px 0 5px;padding:8px}}
 #focusChildLocation{width:24px;height:24px;display:grid;place-items:center;background:#e1f3ea;color:#08765c;border-radius:7px;font-size:19px;line-height:1}
 
+@media(max-width:1100px){.has-live-target:not(.hawon-expanded) .journey-panel{display:none}.has-live-target .live-meeting-card{width:210px;padding:10px;bottom:93px}.has-live-target .live-meeting-card p{margin:7px 0 4px;font-size:10px}.has-live-target .live-adopt{margin:7px 0 5px;padding:8px}.has-live-target .maplibregl-ctrl-bottom-right{bottom:4px!important;right:5px!important;max-width:calc(100% - 10px)}.has-live-target .maplibregl-ctrl-attrib{font-size:8px!important;line-height:12px}.has-live-target .route-card{bottom:30px}}
+
 .demo-toolbar{height:auto!important;min-height:46px;flex-wrap:wrap;gap:8px;padding:8px 0}.drive-playback{display:flex;align-items:center;gap:9px;flex:1;min-width:300px;flex-wrap:wrap;color:#c7d0d5}.drive-playback button,.drive-playback select{min-height:36px;border-radius:8px;border:1px solid #40464b;font:inherit;font-size:12px}.drive-playback .drive-start{background:#edf4f8;color:#152632;font-weight:700;padding:8px 15px;min-width:133px}.drive-playback .drive-restart{background:#21262a;color:#eef4f6;width:36px;font-size:20px}.drive-rate-label{display:flex;align-items:center;gap:7px;font-size:10px}.drive-rate-label select{padding:6px 9px;background:#20262b;color:#eaf0f3}.drive-loop{display:flex;align-items:center;gap:5px;font-size:11px;min-height:36px}.drive-loop input{width:17px;height:17px;accent-color:#55a9e7}.drive-playback #drivePlaybackHint{font-size:10px;color:#aab8c2;flex-basis:100%;padding-left:2px}.guardian-only .drive-playback,.child-active .drive-playback{display:none}.drive-playback button:focus-visible,.drive-playback select:focus-visible{outline:3px solid #54aeeb;outline-offset:2px}.global-nav button{touch-action:manipulation}
 @media(min-width:1100px){.drive-playback{flex-wrap:nowrap}.drive-playback #drivePlaybackHint{flex-basis:auto;margin-left:7px}.reproduction-label{margin-right:12px}}
 @media(max-width:850px){.drive-playback{min-width:100%;gap:7px}.drive-playback .drive-start{padding:7px 10px}.drive-playback #drivePlaybackHint{flex-basis:auto;max-width:235px}.demo-toolbar{align-items:center}}
@@ -48,6 +50,15 @@
 @media(max-width:1100px){.has-stop-notice:not(.hawon-expanded) .journey-panel{display:none}.hawon-expanded .stop-zone-notice{left:7px;width:calc(100% - 14px);gap:6px;padding:9px}.hawon-expanded .stop-zone-symbol{flex-basis:23px;width:23px;height:23px;font-size:19px}.hawon-expanded .stop-zone-copy h2{font-size:14px;line-height:1.35}.hawon-expanded .stop-zone-copy p{display:none}.hawon-expanded .stop-zone-phase{font-size:8px}.hawon-expanded .stop-zone-basis{font-size:8px;margin-top:5px}}
 .has-stop-notice .maplibregl-ctrl-bottom-right{bottom:4px!important;right:5px!important;max-width:calc(100% - 10px)}.has-stop-notice .maplibregl-ctrl-attrib{max-width:100%;font-size:8px!important;line-height:12px}.has-stop-notice .route-card{bottom:34px}.has-stop-notice .stop-zone-notice{bottom:112px}
 @media(max-width:1100px){.has-stop-notice.hawon-expanded .route-card{display:none}.has-stop-notice.hawon-expanded .stop-zone-notice{bottom:76px}}
+
+/* Presenter controls live outside the vehicle display. */
+.showcase-toggle{border:1px solid #647c8a!important;background:#25343e!important;color:#eef6fc!important;border-radius:8px!important;padding:8px 12px!important;min-height:36px;font:inherit;font-size:12px!important;font-weight:700!important;white-space:nowrap}.showcase-toggle[aria-expanded=true]{background:#d4eafb!important;color:#132b3c!important;border-color:#a3cee9!important}.showcase-panel{margin:2px 0 14px;padding:20px 22px 13px;background:linear-gradient(116deg,#182831,#16212b 72%,#1c303e);border:1px solid #3b5362;border-radius:16px;color:#edf4fa;font-family:inherit;box-shadow:0 12px 35px #0003}.showcase-panel[hidden]{display:none!important}.showcase-panel *{box-sizing:border-box}.showcase-panel button{font-family:inherit;cursor:pointer}.showcase-panel button:disabled{cursor:default;opacity:.4}.showcase-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:18px}.showcase-kicker{font-size:9px;letter-spacing:1.4px;color:#91b9d0;font-weight:700}.showcase-header h2{font-size:18px;letter-spacing:-.5px;font-weight:650;margin:5px 0 0;line-height:1.5}.showcase-close{width:30px;height:30px;flex-shrink:0;border:1px solid #415360;border-radius:8px;background:#ffffff08;color:#c7d6e0;font-size:23px;line-height:1}.showcase-layout{display:grid;grid-template-columns:174px minmax(0,1fr) 230px;gap:24px}.showcase-chapters{display:grid;gap:3px;align-content:start;border-right:1px solid #39505f;padding-right:15px}.showcase-chapters button{display:flex;align-items:center;gap:7px;width:100%;min-height:28px;text-align:left;border:0;border-radius:6px;background:transparent;color:#b2c2ce;font-size:10px;padding:5px 7px}.showcase-chapters button>span{font-size:9px;color:#69899d;min-width:15px;font-variant-numeric:tabular-nums}.showcase-chapters button.is-current{background:#d1e9fa;color:#142c3c;font-weight:700}.showcase-chapters button.is-current>span{color:#456d86}.showcase-chapters button i{width:4px;height:4px;border-radius:100%;margin-left:auto;flex-shrink:0;background:#4c6473}.showcase-chapters button.is-opened i{background:#81c9a2}.showcase-story{padding-top:1px;min-width:0;display:flex;flex-direction:column;align-items:flex-start}.showcase-position{font-size:10px;letter-spacing:.25px;color:#8fbed8}.showcase-story h3{font-size:24px;letter-spacing:-.9px;line-height:1.42;margin:10px 0 10px;font-weight:650;max-width:500px;word-break:keep-all}.showcase-description{font-size:12px;line-height:1.8;color:#b9cad6;margin:0;max-width:560px;word-break:keep-all}.showcase-chips{display:flex;flex-wrap:wrap;gap:5px;margin:13px 0 12px}.showcase-chips span{border:1px solid #476174;border-radius:5px;padding:4px 7px;color:#c4dcea;font-size:10px}.showcase-instruction{color:#c6dfed;font-size:10px;margin:0 0 12px;line-height:1.7;word-break:keep-all}.showcase-actions{display:flex;align-items:center;gap:6px;margin-top:auto;padding-top:7px;flex-wrap:wrap}.showcase-actions button{min-height:34px;padding:7px 10px;border:1px solid #466170;border-radius:7px;background:#ffffff06;color:#d1dfe8;font-size:11px;font-weight:600}.showcase-actions .showcase-primary{border-color:#c7e4fa;background:#c7e4fa;color:#132d40;padding:8px 13px;margin-right:3px}.showcase-primary span{margin-left:9px}.showcase-feedback{font-size:10px;line-height:1.6;color:#a4c3d7;min-height:16px;margin:8px 0 0}.showcase-proof{border-radius:11px;padding:16px;background:#0c192399;border:1px solid #3b536255;align-self:stretch}.showcase-proof-label{font-size:10px;color:#8ab5cf;font-weight:700}.showcase-guard{font-size:12px;line-height:1.85;color:#cbd9e3;margin:10px 0 16px;word-break:keep-all}.showcase-manual-state{border-top:1px solid #3c5362;padding-top:11px;color:#e3c78f;font-size:10px;line-height:1.6}.showcase-manual-state.is-confirmed{color:#91cdb0}.showcase-proof-foot{font-size:9px;color:#869ead;line-height:1.7;margin:7px 0 0}.showcase-footer{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:20px;margin-top:18px;padding-top:12px;border-top:1px solid #3b5362}.showcase-footer details{min-width:0}.showcase-footer summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;list-style:none;color:#9eb6c6;font-size:9px;line-height:1.6}.showcase-footer summary::-webkit-details-marker{display:none}.showcase-footer summary:after{content:'+';font-size:14px;color:#b9d2e3;margin-left:2px}.showcase-footer details[open]>summary:after{content:'−'}.showcase-footer summary strong{font-size:10px;color:#d1e2ed;flex-shrink:0}.showcase-footer summary strong>span{margin-left:7px;color:#99c8e8;font-variant-numeric:tabular-nums}.showcase-scope summary>span{margin-left:auto;text-align:right}.showcase-coverage ul{list-style:none;margin:13px 0 0;padding:0;display:grid;grid-template-columns:1fr;gap:5px}.showcase-coverage li{font-size:10px;display:flex;gap:7px;align-items:center;color:#a4bac9;line-height:1.8}.showcase-coverage li i{font-style:normal;color:#607d90;flex-shrink:0}.showcase-coverage li.is-opened{color:#d1e3ee}.showcase-coverage li.is-opened i{color:#91cdb0}.showcase-coverage li small{font-size:9px;margin-left:auto;color:#7d98a9;white-space:nowrap}.showcase-coverage>p,.showcase-scope p{font-size:10px;color:#a5bac8;line-height:1.9;margin:10px 0 0;word-break:keep-all}.showcase-scope b{color:#d3e5f0;font-weight:600;margin-right:7px}.showcase-panel button:focus-visible,.showcase-panel summary:focus-visible,.showcase-toggle:focus-visible{outline:3px solid #75bdeb;outline-offset:3px}.guardian-only .showcase-panel,.guardian-only .showcase-toggle{display:none!important}
+@media(min-width:1500px){.showcase-layout{grid-template-columns:185px minmax(0,1fr) 265px;gap:30px}.showcase-story h3{font-size:27px}.showcase-proof{padding:18px}}
+@media(max-width:1000px){.showcase-panel{padding:16px}.showcase-layout{grid-template-columns:142px minmax(0,1fr);gap:17px}.showcase-chapters{grid-row:span 2;padding-right:10px}.showcase-chapters button{font-size:9px;padding:6px 4px;gap:5px;min-height:29px}.showcase-story h3{font-size:22px}.showcase-proof{grid-column:2;padding:11px 13px}.showcase-guard{font-size:10px;margin:5px 0 8px;line-height:1.75}.showcase-proof-label{font-size:9px}.showcase-manual-state{font-size:9px;padding-top:8px}.showcase-proof-foot{display:none}.showcase-footer{gap:15px}.showcase-scope summary>span{font-size:8px;max-width:190px}.showcase-header h2{font-size:17px}}
+@media(max-width:600px){.showcase-panel{padding:13px;border-radius:11px}.showcase-header{margin-bottom:12px}.showcase-kicker{font-size:8px;letter-spacing:.8px}.showcase-header h2{font-size:15px;max-width:300px}.showcase-layout{display:flex;flex-direction:column;gap:13px}.showcase-chapters{display:flex;overflow-x:auto;border:0;border-bottom:1px solid #39505f;padding:0 0 9px;gap:4px}.showcase-chapters button{width:auto;min-width:max-content;font-size:10px;padding:7px 8px}.showcase-chapters button i{display:none}.showcase-story h3{font-size:21px;margin-top:8px}.showcase-description{font-size:11px}.showcase-proof{padding:11px 13px}.showcase-guard{font-size:10px}.showcase-footer{grid-template-columns:1fr;gap:10px;margin-top:12px}.showcase-scope summary>span{max-width:none;font-size:8px}.showcase-coverage ul{grid-template-columns:1fr}.showcase-actions button{min-height:37px}}
+@media(prefers-reduced-motion:reduce){.showcase-panel *{scroll-behavior:auto!important}}
+
+.showcase-panel{width:100%;flex-shrink:0}
 </style></head>
 <body><div class="app-shell">
 <main class="cockpit" id="vehicleView" aria-label="Pleos Connect의 화면 구성을 재현한 가상 차량 시연">
@@ -59,7 +70,7 @@
 </main>
 <section class="guardian-companion" id="guardianView" hidden aria-label="보호자 동반 화면"><div class="guardian-heading"><div><span class="eyebrow">GUARDIAN COMPANION</span><h2>보호자 화면</h2><p>차량 상태를 보며 가상 일정과 기관 요청을 작성해요.</p></div><div class="guardian-actions"><button id="openGuardian" class="quiet-button">새 탭에서 열기 ↗</button><button id="backVehicle" class="quiet-button">차량 화면</button></div></div><div class="guardian-layout"><div class="guardian-phone"><div class="phone-top"><strong>하원콜</strong><span>보호자 · DEMO</span></div><div class="phone-content"><span class="guardian-location" id="guardianInstitution">대치동 학원(시연)</span><h2 id="guardianTitle">아직 출발 전이에요</h2><p id="guardianDescription">차량 시연을 시작하면 도착 상태가 여기에 표시돼요.</p><div class="guardian-arrival"><span>시연 차량</span><strong id="guardianEta">약 3분 후 도착</strong><p id="guardianGear">P · 출발 준비</p></div><div class="guardian-timeline" id="guardianTimeline"></div><button id="guardianConfirm" class="primary-button" disabled aria-label="읽기 전용 보호자 확인 상태">차량에서 보호자 확인을 기다려요</button><p class="phone-footnote" id="guardianFootnote">가상 문·착석 신호만으로 탑승을 확정하지 않아요.</p></div></div><div class="guardian-explainer"><span class="outline-icon">↔</span><h3>하나의 시연, 두 화면</h3><p>차량 화면에서 주행·근접·P 주차·가상 신호를 선택하면 보호자 화면도 함께 바뀌어요.</p><p id="guardianRule">아이의 실제 탑승을 확인한 보호자의 명시적 동작이 마지막 단계예요.</p><div class="sync-status"><i></i><span id="syncStatus">같은 브라우저 시연 상태</span></div><p class="micro">브라우저의 로컬 저장소와 탭 간 동기화만 사용해요. 가상 일정은 로컬 저장소를 사용해요. 아이 GPS 공유는 별도 동의로 시작하며 메모리에만 보관해요.</p></div></div></section>
 
-<div class="demo-toolbar"><span class="reproduction-label">구성 재현 · 가상 차량 · v0.13</span><div class="toolbar-actions"><button id="guardianToggle">보호자 화면</button><button id="drawerToggle" aria-controls="simulationDrawer" aria-expanded="false">시연 조작 <span class="drawer-chevron">⌃</span></button><button id="settings" class="toolbar-icon" aria-label="설정 및 데이터 안내"><svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 3 1-1h4l1 3 3 1 2 3-2 3 1 3-3 2-1 4h-4l-1-3-3-1-2-3 2-3-1-3 3-2Z"/><circle cx="12" cy="12" r="3"/></svg></button><button id="fullscreen" class="toolbar-icon" aria-label="전체 화면"><svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div></div>
+<div class="demo-toolbar"><span class="reproduction-label">구성 재현 · 가상 차량 · v0.14</span><div class="toolbar-actions"><button id="guardianToggle">보호자 화면</button><button id="drawerToggle" aria-controls="simulationDrawer" aria-expanded="false">시연 조작 <span class="drawer-chevron">⌃</span></button><button id="settings" class="toolbar-icon" aria-label="설정 및 데이터 안내"><svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 3 1-1h4l1 3 3 1 2 3-2 3 1 3-3 2-1 4h-4l-1-3-3-1-2-3 2-3-1-3 3-2Z"/><circle cx="12" cy="12" r="3"/></svg></button><button id="fullscreen" class="toolbar-icon" aria-label="전체 화면"><svg class="ui-icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div></div>
 <section class="simulation-drawer" id="simulationDrawer" hidden aria-label="시연 조작 패널"><button id="drawerClose" class="drawer-close" aria-label="시연 조작 닫기">×</button><section class="scenario-bar" aria-label="시연 조건"><div class="scenario-fields"><label>시연 기관<select id="institution"><option value="school">학교</option><option value="kindergarten">유치원</option><option value="daycare">어린이집</option><option value="academy" selected>학원</option></select></label><div class="mode-switch" aria-label="운행 유형"><button data-mode="pickup" class="selected" aria-pressed="true">하원 <small>PICKUP</small></button><button data-mode="dropoff" aria-pressed="false">등원 <small>DROPOFF</small></button></div></div><span class="scenario-note">선릉 → 대치동 · 저장된 시연 경로</span></section><section class="director" aria-label="발표 및 시연 조작"><div class="director-heading"><div><span class="eyebrow">PRESENTATION CONTROL</span><h2>만나기까지, 한 단계씩</h2></div><p id="directorHint">재생하면 실제 도로 위 가상 차량이 이동해요.</p></div><div class="director-controls"><div class="playback"><button id="playPause" class="primary-button"><span id="playIcon">▶</span><span id="playText">시연 재생</span></button><button id="restart" class="reset-button" aria-label="시연 처음부터">↺</button></div><div class="stage-controls"><button data-stage="driving"><small>01</small>주행</button><button data-stage="approach"><small>02</small>D 근접</button><button data-stage="park"><small>03</small>P 주차</button><button data-stage="sensor"><small>04</small><span id="sensorLabel">탑승 신호</span></button><button data-stage="guardian"><small>05</small>보호자 확인</button></div></div><div class="event-line"><i></i><span id="eventMessage">지도는 실제 도로, 차량 신호와 알림은 시연이에요.</span><span class="keyboard-hint">← → 단계 이동 · Space 재생</span></div></section>
 <p class="drawer-note">키보드 ← → 단계 이동 · Space 재생 · 모든 차량 신호와 기관 알림은 가상 시연입니다.</p></section>
 </div><dialog id="confirmDialog" aria-labelledby="confirmTitle"><button class="dialog-close" data-close="confirmDialog" aria-label="닫기">×</button><span class="dialog-symbol">✓</span><span class="eyebrow">보호자 직접 확인 · 시연</span><h2 id="confirmTitle">아이의 탑승을<br>직접 확인했나요?</h2><p id="confirmDescription">아이의 실제 탑승을 눈으로 확인한 뒤 눌러주세요. 센서 신호는 확인 후보일 뿐이에요.</p><div class="confirm-facts"><span>시연 기관 100m 이내</span><b>기어 P</b></div><button id="confirmGuardian" class="primary-button">네, 탑승을 확인했어요</button><button data-close="confirmDialog" class="later-button">아직 확인 전이에요</button></dialog>
@@ -1373,14 +1384,14 @@ function createRoadMap(container, {route, statusElement, onFollowChange, maplibr
 return {metersBetween,pointAlongRoute,navigationPoseForProgress,guidanceForProgress,navigationMapStyle,createRoadMap};})();
 const {DEMO_STORAGE_KEY,packDemoState,restoreDemoState,domainStorageKey,packDomain,validDomainPacket} = (()=>{
 // Only public, fabricated demo state is persisted. No route coordinates or user data.
-const DEMO_STORAGE_KEY = 'hawoncall.browser-demo.v13';
+const DEMO_STORAGE_KEY = 'hawoncall.browser-demo.v14';
 const scalarKeys=['playbackRate','tripId','tripGeneration','progress','gear','speedKph','now','navAt','vehicleAt','playing','candidate','confirmed','confirmedAt','departed','mode','institution'];
 function packDemoState(state, source, revision=Date.now()) {
  const snapshot=Object.fromEntries(scalarKeys.map(k=>[k,state[k]]));
- return {version:13,actor:'car',domain:'journey',source,revision,snapshot};
+ return {version:14,actor:'car',domain:'journey',source,revision,snapshot};
 }
 function restoreDemoState(packet, initial) {
- if(!packet||packet.version!==13||packet.actor!=='car'||packet.domain!=='journey'||typeof packet.source!=='string'||!Number.isFinite(packet.revision)||!packet.snapshot)return null;
+ if(!packet||packet.version!==14||packet.actor!=='car'||packet.domain!=='journey'||typeof packet.source!=='string'||!Number.isFinite(packet.revision)||!packet.snapshot)return null;
  const s=packet.snapshot;
  if(![1,3,6].includes(s.playbackRate))return null;
  if(!Number.isInteger(s.tripGeneration)||s.tripGeneration<0)return null;
@@ -1396,8 +1407,8 @@ function restoreDemoState(packet, initial) {
 // Independent keys for guardian plan, institution declarations and each request.
 // No operations writer ever stores or merges a journey snapshot.
 function domainStorageKey(domain,id=''){return `${DEMO_STORAGE_KEY}.${domain}${id?'.'+id:''}`;}
-function packDomain(domain,value,source,revision=Date.now(),actor='guardian'){if(!['dayplan','institution','issue'].includes(domain)||!['guardian','institution','car'].includes(actor))return null;if(domain==='dayplan'&&actor!=='guardian'||domain==='institution'&&actor!=='institution')return null;return {version:13,domain,actor,value,source,revision};}
-function validDomainPacket(p){return !!p&&p.version===13&&['dayplan','institution','issue'].includes(p.domain)&&typeof p.source==='string'&&Number.isFinite(p.revision)&&!!p.value&&(p.domain==='dayplan'?p.actor==='guardian':p.domain==='institution'?p.actor==='institution':['guardian','car','institution'].includes(p.actor));}
+function packDomain(domain,value,source,revision=Date.now(),actor='guardian'){if(!['dayplan','institution','issue'].includes(domain)||!['guardian','institution','car'].includes(actor))return null;if(domain==='dayplan'&&actor!=='guardian'||domain==='institution'&&actor!=='institution')return null;return {version:14,domain,actor,value,source,revision};}
+function validDomainPacket(p){return !!p&&p.version===14&&['dayplan','institution','issue'].includes(p.domain)&&typeof p.source==='string'&&Number.isFinite(p.revision)&&!!p.value&&(p.domain==='dayplan'?p.actor==='guardian':p.domain==='institution'?p.actor==='institution':['guardian','car','institution'].includes(p.actor));}
 
 return {DEMO_STORAGE_KEY,packDemoState,restoreDemoState,domainStorageKey,packDomain,validDomainPacket};})();
 const {READINESS_FRESH_MS,ISSUE_KINDS,serviceDate,validDate,validateDayPlan,demoDayPlan,meetingPoint,validateReadiness,readinessEstimate,createIssue,validateIssue,applyIssue,respondIssue,buildBrief,briefKey,mayAutoBrief} = (()=>{
@@ -1478,7 +1489,9 @@ function mountOperations({getJourney,guardianOnly,source,toast,route}){
  document.body.insertAdjacentHTML('beforeend',`<dialog id="issueDialog" class="operations-dialog"><button class="dialog-close" id="closeIssue" aria-label="문제 알림 닫기">×</button><span class="eyebrow">기관에 요청 · 가상 시연</span><h2>상황을 알려 주세요</h2><p>기관의 응답을 기다려요. 요청만으로 운행·경로가 바뀌지 않아요.</p><form id="issueForm"><label>상황<select id="issueKind">${Object.entries(ISSUE_KINDS).map(([k,v])=>`<option value="${k}">${v}</option>`).join('')}</select></label><label>짧은 메모<textarea id="issueMessage" maxlength="120" rows="2" placeholder="가상 내용만 입력해 주세요"></textarea></label><button class="primary-button">기관에 요청 남기기</button><p id="issueFeedback" role="status"></p></form></dialog><dialog id="briefDialog" class="operations-dialog"><button class="dialog-close" id="closeBrief" aria-label="일정 음성 안내 닫기">×</button><span class="eyebrow">브라우저 음성 · 오늘 일정</span><h2>다음 일정을 짧게</h2><p>보호자가 작성한 가상 일정, 최대 3개와 알림을 안내해요.</p><label class="voice-opt"><input id="voiceOptIn" type="checkbox"> 출발·직접 탑승 확인 후 음성 안내</label><p class="form-help">P에서 직접 켜 주세요. 브라우저 음성은 다른 앱 음악의 음량을 제어하지 못해요.</p><div id="briefTranscript" class="brief-transcript"></div><p id="voiceStatus" role="status">대기 · 아직 음성을 재생하지 않았어요.</p><p id="voiceRestriction" class="form-help"></p><div class="brief-actions"><button id="briefPlay" class="primary-button">한 번 듣기</button><button id="briefStop" class="quiet-button">멈춤</button></div><p class="form-help">탭을 숨기거나 경로가 바뀌면 멈춰요. 회전·도착 150m 이내 주행 중에는 안내를 멈춰요. 음성 엔진이 없으면 안내문으로 확인해 주세요.</p></dialog>`);
  const player=createBriefPlayer({onChange:({status,active})=>{el('voiceStatus').textContent=status;el('mediaApp')?.classList.toggle('speech-active',active);el('mediaApp')?.setAttribute('aria-label',active?'미디어 · 일정 음성 재생 중':'미디어');}});
  function row(item={time:'17:00',title:'',note:''}){const d=document.createElement('div');d.className='plan-row';d.innerHTML=`<input type="time" aria-label="일정 시간" required value="${esc(item.time)}"><input class="plan-title" aria-label="일정 이름" placeholder="가상 일정 이름" maxlength="48" required value="${esc(item.title)}"><button type="button" aria-label="일정 삭제">×</button><input class="plan-note" aria-label="일정 메모" placeholder="짧은 메모 (선택)" maxlength="80" value="${esc(item.note)}">`;d.querySelector('button').onclick=()=>{d.remove();dirty=true;};el('planRows').append(d);}
- function fillForm(){if(!el('planDate'))return;el('planDate').value=plan.serviceDate;el('planReminder').value=plan.reminder;el('planRows').replaceChildren();plan.items.forEach(row);}
+ function fillForm(value=plan){if(!el('planDate'))return;el('planDate').value=value.serviceDate;el('planReminder').value=value.reminder;el('planRows').replaceChildren();value.items.forEach(row);}
+ const sample=document.createElement('button');sample.type='button';sample.id='loadExamplePlan';sample.className='quiet-button';sample.textContent='가상 예시 일정 불러오기';el('dayPlanForm').prepend(sample);
+ sample.onclick=()=>{const now=new Date(),minutes=now.getHours()*60+now.getMinutes(),clock=offset=>{const m=Math.min(1439,minutes+offset);return `${String(Math.floor(m/60)).padStart(2,'0')}:${String(m%60).padStart(2,'0')}`;};fillForm({...demoDayPlan(),items:[{time:clock(30),title:'다음 수업',note:'가상 예시 · 준비물 물병'},{time:clock(75),title:'가족과 저녁',note:'가상 예시 · 귀가 일정'}],reminder:'가상 예시: 물병과 가방을 확인해 주세요.'});dirty=true;el('planFeedback').textContent='가상 예시를 편집칸에 넣었어요. 오늘 일정 저장을 누르면 차량에 반영돼요.';};
  el('addPlanRow').onclick=()=>{if(el('planRows').children.length>=8){toast('일정은 최대 8개까지 입력할 수 있어요.');return;}dirty=true;row();};
  el('dayPlanForm').oninput=()=>{dirty=true;};
  el('dayPlanForm').onsubmit=e=>{e.preventDefault();const next={serviceDate:el('planDate').value,source:'guardian-demo',items:[...el('planRows').children].map(d=>({time:d.querySelector('input[type=time]').value,title:d.querySelector('.plan-title').value.trim(),note:d.querySelector('.plan-note').value.trim()})),reminder:el('planReminder').value.trim()};if(!validateDayPlan(next)){el('planFeedback').textContent='날짜·시간과 일정 이름을 확인해 주세요. 특수 태그는 입력할 수 없어요.';return;}dirty=false;save('dayplan',next,'guardian');el('planFeedback').textContent='가상 일정 저장 완료 · 같은 브라우저 탭에 반영했어요.';};
@@ -1517,7 +1530,7 @@ function mountOperations({getJourney,guardianOnly,source,toast,route}){
  function receive(p){if(p?.source===source)return;if(accept(p))render();}
  if(opsChannel)opsChannel.onmessage=e=>receive(e.data);window.addEventListener('storage',e=>{if(e.key?.startsWith(DEMO_STORAGE_KEY+'.')){try{receive(JSON.parse(e.newValue));}catch{}}});
  fillForm();try{for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k?.startsWith(DEMO_STORAGE_KEY+'.')){if(k.startsWith(domainStorageKey('voice')+'.')){played.add(k.slice((domainStorageKey('voice')+'.').length));continue;}try{accept(JSON.parse(localStorage.getItem(k)));}catch{}}}}catch{}
- return {render,openBrief:showBrief,onTransition(type,previous){if(['RESET','SCENARIO','NAVIGATION'].includes(type)&&(player.active||player.pending)){player.stop('운행·경로가 바뀌어 안내를 멈췄어요.');}if(type==='PLAY')speak('outbound');if(type==='CONFIRM'&&!previous.confirmed&&getJourney().confirmed&&getJourney().mode==='pickup')speak('after-pickup');},stop:reason=>{if(player.active||player.pending)player.stop(reason);},clear(){player.stop();plan=demoDayPlan();institution=null;issues=[];played.clear();revisions.clear();dirty=false;fillForm();render();}};
+ return {render,openBrief:showBrief,showPanel:tab=>{if(['meeting','readiness','issues','plan'].includes(tab))selected=tab;render();},onTransition(type,previous){if(['RESET','SCENARIO','NAVIGATION'].includes(type)&&(player.active||player.pending)){player.stop('운행·경로가 바뀌어 안내를 멈췄어요.');}if(type==='PLAY')speak('outbound');if(type==='CONFIRM'&&!previous.confirmed&&getJourney().confirmed&&getJourney().mode==='pickup')speak('after-pickup');},stop:reason=>{if(player.active||player.pending)player.stop(reason);},clear(){player.stop();plan=demoDayPlan();institution=null;issues=[];played.clear();revisions.clear();dirty=false;fillForm();render();}};
 }
 
 return {mountOperations};})();
@@ -1590,7 +1603,7 @@ function mountLiveGPS({map,getJourney,route,toast,onPause,childOnly=false,guardi
  function stop(reason='위치 공유를 중지했어요.',notify=true){stopped=true;if(watch!==null){navigator.geolocation?.clearWatch(watch);watch=null;}clearInterval(demoTimer);demoTimer=null;if(own&&notify)emit(packet(null,true));own=null;live=null;clearRoute();if(childToken){const token=childToken;childToken=null;childSession=null;api('/api/child/location-sharing/stop',{method:'POST',body:{},token}).catch(()=>{});}el('childSharingStatus').textContent='위치 공유 꺼짐';el('childSharingDetail').textContent=reason;render();}
  function begin(kind){stop('새 공유를 준비하고 있어요.');stopped=false;own={sessionId:uid(),expiresAt:Date.now()+SESSION_TTL};if(kind==='gps'&&childSession)own={sessionId:childSession.id,expiresAt:Date.parse(childSession.expiresAt)};}
  function setFix(fix){if(!own||stopped||Date.now()>=own.expiresAt){stop('30분 공유 시간이 끝났어요.');return;}if(!validFix(fix)){live=null;map.setLiveTarget?.(null);el('childSharingDetail').textContent='정확도 50m 이내의 최신 위치를 기다려요.';render();return;}if(!inMapScope(fix)){live=null;map.setLiveTarget?.(null);el('childSharingDetail').textContent='서울 지도 지원 범위를 벗어나 차량 지도에 표시하지 않아요.';render();return;}live={...own,owner,fix};if(!connection)emit(packet(fix));el('childSharingStatus').textContent=fix.kind==='demo'?'가상 아이 위치 공유 중':'내 휴대폰 GPS 공유 중';el('childSharingDetail').textContent=`정확도 ±${Math.round(fix.accuracy)}m · 화면이 보이는 동안만 공유해요.`;render();}
- function demo(){if(connection){toast('실제 서버 연결을 해제한 뒤 가상 위치를 체험해 주세요.');return;}begin('demo');let n=0;const tick=()=>{const p=pointAlongRoute(route.coordinates,.77+Math.sin(n++/12)*.12);setFix({kind:'demo',lat:p.lat,lon:p.lon,accuracy:12,observedAt:Date.now()});};tick();demoTimer=setInterval(tick,2000);}
+ function demo(){if(connection){toast('실제 서버 연결을 해제한 뒤 가상 위치를 체험해 주세요.');return false;}begin('demo');let n=0;const tick=()=>{const p=pointAlongRoute(route.coordinates,.77+Math.sin(n++/12)*.12);setFix({kind:'demo',lat:p.lat,lon:p.lon,accuracy:12,observedAt:Date.now()});};tick();demoTimer=setInterval(tick,2000);return true;}
  async function poll(){if(!connection||!['guardian','car'].includes(connection.role)||polling)return;polling=true;const currentConnection=connection;try{const p=await api(`/api/${connection.role}/live-location`);if(!connection||connection!==currentConnection)return;if(p.fresh&&p.location&&p.session){const f=p.location;const next={owner:'authenticated-server',sessionId:p.session.id,expiresAt:Date.parse(p.session.expiresAt),fix:{kind:'gps',lat:f.latitude,lon:f.longitude,accuracy:f.accuracyMeters,observedAt:Date.parse(f.observedAt)}};if(live&&live.sessionId!==next.sessionId)clearRoute();live=usableFix(next)?next:null;}else{if(!p.session)clearRoute();live=null;}el('liveConnectionStatus').textContent='인증된 서버 연결 · 2초마다 최신 위치 확인';}catch{if(connection!==currentConnection)return;live=null;el('liveConnectionStatus').textContent='서버 수신 실패 · 오래된 위치를 표시하지 않아요.';}finally{polling=false;render();}}
  document.querySelectorAll('[data-live-demo]').forEach(b=>b.onclick=demo);
  document.querySelectorAll('[data-live-stop]').forEach(b=>b.onclick=async()=>{stop();if(connection?.role==='guardian')try{await api('/api/guardian/location-sharing',{method:'DELETE'});}catch{toast('서버 중지 여부를 확인하지 못했어요.');}});
@@ -1605,11 +1618,11 @@ function mountLiveGPS({map,getJourney,route,toast,onPause,childOnly=false,guardi
  el('adoptLive').onclick=()=>{frozen=freezeTarget(live,getJourney().gear);if(!frozen)return;el('routeFixSummary').textContent=`${frozen.kind==='demo'?'가상 아이 위치':'휴대폰 GPS'} · 정확도 ±${Math.round(frozen.accuracy)}m · 이 순간의 위치를 고정해 조회해요.`;el('routeDialogStatus').textContent='';el('liveRouteDialog').showModal();};
  el('closeLiveRoute').onclick=()=>el('liveRouteDialog').close();
  el('confirmLiveRoute').onclick=async()=>{if(!mayAdopt(frozen,live,getJourney().gear)){el('routeDialogStatus').textContent='P 상태와 최신 위치를 다시 확인해 주세요.';return;}const target=frozen,origin=pointAlongRoute(route.coordinates,getJourney().progress),request=++routeRequest,sessionId=target.sessionId;routeBusy=true;el('confirmLiveRoute').disabled=true;el('routeDialogStatus').textContent='실제 도로 경로를 조회하고 있어요…';render();try{const response=await fetch(`https://router.project-osrm.org/route/v1/driving/${origin.lon},${origin.lat};${target.lon},${target.lat}?overview=full&geometries=geojson&steps=true`,{cache:'no-store',credentials:'omit',referrerPolicy:'no-referrer',signal:AbortSignal.timeout(12000)});const r=response.ok?parseRoadResponse(await response.json()):null;if(!r)throw new Error('unavailable');if(request!==routeRequest||!mayAdopt(target,live,getJourney().gear)||live.sessionId!==sessionId)throw new Error('changed');adopted={...r,target};map.setMeetingRoute?.(adopted);onPause();el('liveRouteDialog').close();toast('확인한 아이 위치의 도로 경로를 표시했어요. 자동 갱신하지 않아요.');}catch{if(request===routeRequest)el('routeDialogStatus').textContent='도로 경로를 확인하지 못했어요. 기존 경로를 유지해요. P 상태와 최신 위치를 다시 확인해 주세요.';}finally{if(request===routeRequest)routeBusy=false;el('confirmLiveRoute').disabled=false;render();}};
- function render(){const now=Date.now();if(adopted&&getJourney().gear!=='P')clearRoute();if(live&&(live.expiresAt<=now||now-live.fix.observedAt>FIX_TTL)){live=null;map.setLiveTarget?.(null);}const ok=usableFix(live,now),f=live?.fix,age=f?Math.max(0,Math.floor((now-f.observedAt)/1000)):0;map.setLiveTarget?.(ok?f:null);el('liveDot').classList.toggle('live',ok);el('liveKind').textContent=ok?(f.kind==='demo'?'가상 아이 위치':'휴대폰 GPS'):'공유 대기';el('liveStatus').textContent=ok?`${age}초 전 수신 · ${f.kind==='demo'?'가상 위치 이동 중':'현재 휴대폰 위치'}`:'최신 위치 없음 · 30초 지난 위치는 숨겨요.';el('liveAccuracy').textContent=ok?`정확도 ±${Math.round(f.accuracy)}m · ${Math.max(0,Math.ceil((live.expiresAt-now)/60000))}분 뒤 공유 종료`:'최근 30초 · 정확도 50m 이내만 표시';el('focusChildLocation').disabled=!ok;el('adoptLive').disabled=!ok||getJourney().gear!=='P'||guardianOnly||routeBusy;el('adoptLive').textContent=routeBusy?'도로 경로 조회 중…':getJourney().gear!=='P'?'P 정차 후 목적지 확인':'이 위치를 목적지로 확인';el('liveRouteStatus').textContent=adopted?`확인 좌표 고정 · ${(adopted.totalMeters/1000).toFixed(1)}km · OSRM 약 ${Math.ceil(adopted.durationSeconds/60)}분 (교통 미반영)`:'주정차·승하차 허용은 미확인';el('guardianLiveStatus').textContent=ok?`${f.kind==='demo'?'가상 아이 위치':'아이 휴대폰 GPS'} · ${age}초 전 · 정확도 ±${Math.round(f.accuracy)}m`:'최신 아이 위치를 기다려요. 오래된 위치는 표시하지 않아요.';el('createLiveSession').disabled=connection?.role!=='guardian';if(adopted){el('turnArrow').textContent='↗';el('turnDistance').textContent='경로';el('turnRoad').textContent='아이 만남 위치 · 도로 미리보기';el('stateTitle').textContent='아이 위치 도로 미리보기';el('stateDetail').textContent='확인한 위치 고정 · 주행 재개 시 기관 시연으로 돌아가요.';el('destinationName').textContent='아이 만남 위치 · 확인 좌표';el('etaText').textContent=`도로 경로 미리보기 · ${(adopted.totalMeters/1000).toFixed(1)}km · 실차 안내 아님`;el('arrivalTime').textContent='교통 미반영';}if(el('liveRouteDialog').open&&!mayAdopt(frozen,live,getJourney().gear)){el('confirmLiveRoute').disabled=true;el('routeDialogStatus').textContent='위치가 오래되거나 P 상태가 바뀌었어요. 닫고 다시 확인해 주세요.';}else if(!routeBusy)el('confirmLiveRoute').disabled=false;}
+ function render(){const now=Date.now();if(adopted&&getJourney().gear!=='P')clearRoute();if(live&&(live.expiresAt<=now||now-live.fix.observedAt>FIX_TTL)){live=null;map.setLiveTarget?.(null);}const ok=usableFix(live,now),f=live?.fix,age=f?Math.max(0,Math.floor((now-f.observedAt)/1000)):0;map.setLiveTarget?.(ok?f:null);el('liveDot').classList.toggle('live',ok);el('vehicleView').classList.toggle('has-live-target',ok);el('liveKind').textContent=ok?(f.kind==='demo'?'가상 아이 위치':'휴대폰 GPS'):'공유 대기';el('liveStatus').textContent=ok?`${age}초 전 수신 · ${f.kind==='demo'?'가상 위치 이동 중':'현재 휴대폰 위치'}`:'최신 위치 없음 · 30초 지난 위치는 숨겨요.';el('liveAccuracy').textContent=ok?`정확도 ±${Math.round(f.accuracy)}m · ${Math.max(0,Math.ceil((live.expiresAt-now)/60000))}분 뒤 공유 종료`:'최근 30초 · 정확도 50m 이내만 표시';el('focusChildLocation').disabled=!ok;el('adoptLive').disabled=!ok||getJourney().gear!=='P'||guardianOnly||routeBusy;el('adoptLive').textContent=routeBusy?'도로 경로 조회 중…':getJourney().gear!=='P'?'P 정차 후 목적지 확인':'이 위치를 목적지로 확인';el('liveRouteStatus').textContent=adopted?`확인 좌표 고정 · ${(adopted.totalMeters/1000).toFixed(1)}km · OSRM 약 ${Math.ceil(adopted.durationSeconds/60)}분 (교통 미반영)`:'주정차·승하차 허용은 미확인';el('guardianLiveStatus').textContent=ok?`${f.kind==='demo'?'가상 아이 위치':'아이 휴대폰 GPS'} · ${age}초 전 · 정확도 ±${Math.round(f.accuracy)}m`:'최신 아이 위치를 기다려요. 오래된 위치는 표시하지 않아요.';el('createLiveSession').disabled=connection?.role!=='guardian';if(adopted){el('turnArrow').textContent='↗';el('turnDistance').textContent='경로';el('turnRoad').textContent='아이 만남 위치 · 도로 미리보기';el('stateTitle').textContent='아이 위치 도로 미리보기';el('stateDetail').textContent='확인한 위치 고정 · 주행 재개 시 기관 시연으로 돌아가요.';el('destinationName').textContent='아이 만남 위치 · 확인 좌표';el('etaText').textContent=`도로 경로 미리보기 · ${(adopted.totalMeters/1000).toFixed(1)}km · 실차 안내 아님`;el('arrivalTime').textContent='교통 미반영';}if(el('liveRouteDialog').open&&!mayAdopt(frozen,live,getJourney().gear)){el('confirmLiveRoute').disabled=true;el('routeDialogStatus').textContent='위치가 오래되거나 P 상태가 바뀌었어요. 닫고 다시 확인해 주세요.';}else if(!routeBusy)el('confirmLiveRoute').disabled=false;}
  document.addEventListener('visibilitychange',()=>{if(document.hidden&&(own||childToken))stop('화면을 숨겨 위치 공유를 중지했어요.');});window.addEventListener('pagehide',()=>stop('페이지를 떠나 공유를 중지했어요.'));setInterval(()=>{if(own&&Date.now()>=own.expiresAt)stop('30분 공유 시간이 끝났어요.');render();},1000);
  if(childOnly&&location.protocol==='https:'&&location.pathname.endsWith('/child')){connection={base:location.origin,role:'child',token:''};el('liveBackend').value=location.origin;el('liveRole').value='child';el('liveConnectionStatus').textContent='이 HTTPS 서버의 아이 연결 화면';el('childPairStatus').textContent='보호자가 알려준 일회용 코드를 입력해 주세요.';}
  if(childOnly){el('vehicleView').hidden=true;el('guardianView').hidden=true;el('childView').hidden=false;document.body.classList.add('child-active');}
- render();return {render,stop,hasMeetingPreview:()=>!!adopted,clear:()=>stop(),onJourneyChange(){clearRoute();render();}};
+ render();return {render,stop,startDemo:demo,openMeeting:()=>{el('adoptLive').click();},hasMeetingPreview:()=>!!adopted,clear:()=>stop(),onJourneyChange(){clearRoute();render();}};
 }
 
 return {mountLiveGPS};})();
@@ -1646,6 +1659,7 @@ function mountDriveControls({getJourney,play,pause,reset,setRate,openNavigation,
   const visibility=()=>{if(document.hidden){manual=true;loop.interrupt();if(getJourney().playing)pause();}};
   document.addEventListener('visibilitychange',visibility);
   return {
+    setRepeat(value){loopBox.checked=!!value;manual=false;loop.setEnabled(loopBox.checked);},
     render(v){
       if(!manual)loop.observe(v);
       button.textContent=v.playing?'Ⅱ 주행 일시 정지':v.near||v.confirmed||v.departed?'▶ 다시 주행':'▶ 주행 시작';
@@ -1696,11 +1710,140 @@ function mountStopZone({getJourney,hasMeetingPreview=()=>false,guardianOnly=fals
     notice.dataset.kind=v.kind;icon.textContent=v.symbol;phase.textContent=`${v.phase} · ${v.scenario}`;title.textContent=v.title;detail.textContent=v.detail;basis.textContent=v.basis;
   }
   selector.onchange=()=>render();
-  return {render,getScenario:()=>selector.value};
+  return {render,getScenario:()=>selector.value,setScenario:value=>{selector.value=['prohibited','allowed','unknown'].includes(value)?value:'unknown';render();}};
 }
 
 return {stopZoneNotice,mountStopZone};})();
-const {SHELL_APPS,createShellState,reduceShell,openShellApp,mountPleosShell,updatePleosShell,drivingMotionSnapshot,drivingLaneDash,drivingTrafficPose} = (()=>{
+const {SHOWCASE_FEATURES,SHOWCASE_STEPS,createShowcaseState,reduceShowcase,getShowcaseCoverage,mountShowcase} = (()=>{
+/** Employee presentation rail. Opening a scene never implies a completed user action. */
+const freezeDeep = value => {
+  if (value && typeof value === 'object' && !Object.isFrozen(value)) {
+    Object.values(value).forEach(freezeDeep);
+    Object.freeze(value);
+  }
+  return value;
+};
+
+const SHOWCASE_FEATURES = freezeDeep([
+  {id:'route-retained',label:'기존 내비 경로 유지',sceneId:'start'},
+  {id:'eta',label:'도착 예정 시간',sceneId:'start'},
+  {id:'guardian-view',label:'보호자 화면',sceneId:'guardian'},
+  {id:'guardian-plan',label:'보호자 일정 작성',sceneId:'guardian'},
+  {id:'gps-sharing',label:'아이 위치 공유',sceneId:'child'},
+  {id:'gps-quality',label:'위치 시각·정확도 확인',sceneId:'child'},
+  {id:'destination-consent',label:'P에서 목적지 변경 동의',sceneId:'meeting'},
+  {id:'stop-zone',label:'금지·가능구역 가정 시연',sceneId:'approach'},
+  {id:'drive-park',label:'D 근접과 P 정차 구분',sceneId:'approach'},
+  {id:'sensor-candidate',label:'탑승 신호는 후보로 표시',sceneId:'boarding'},
+  {id:'guardian-confirmation',label:'보호자 직접 확인',sceneId:'boarding',manualAction:'guardian-confirmation'},
+  {id:'voice-brief',label:'오늘 일정 음성 안내',sceneId:'briefing'},
+  {id:'media',label:'차량 미디어 화면',sceneId:'briefing'},
+  {id:'readiness',label:'ETA와 기관 준비 비교',sceneId:'operations'},
+  {id:'issue-request',label:'장소·지연·취소 요청',sceneId:'operations'},
+  {id:'institution-types',label:'학교·유치원·어린이집·학원',sceneId:'operations'},
+  {id:'ecosystem',label:'차량 앱 라이브러리',sceneId:'apps'},
+]);
+
+const SHOWCASE_STEPS = freezeDeep([
+  {id:'start',sceneId:'start',actionRef:'start',title:'아이를 만나러 가는 길',takeaway:'아이 위치와 도착 시간을, 한 화면에서.',description:'기존 경로는 유지하면서 움직이는 가상 아이 위치와 차량의 도착 예정 시간을 함께 보세요.',features:['route-retained','eta'],instruction:'직접 볼 것 · 지도 위 이동과 도착 예정 시간',guard:'차량 위치·기어·기관 알림은 가상 시연 상태입니다.'},
+  {id:'guardian',sceneId:'guardian',actionRef:'guardian',title:'보호자는 오늘을 준비',takeaway:'보호자의 일정이 차량 안 안내로 이어집니다.',description:'모바일 형태의 보호자 화면에서 오늘 일정과 준비물을 작성할 수 있습니다.',features:['guardian-view','guardian-plan'],instruction:'직접 할 것 · 오늘 일정 편집 후 저장',guard:'현재 반영 범위는 같은 브라우저의 시연 화면입니다. 실제 기관·휴대폰 서버 연결은 없습니다.'},
+  {id:'child',sceneId:'child',actionRef:'child',title:'아이와 만날 위치 확인',takeaway:'공유 위치도 시각과 정확도를 함께 봅니다.',description:'아이 화면에서 공유를 직접 시작하고 차량에서 확인하는 흐름입니다. 이 장면은 권한을 요청하지 않습니다.',features:['gps-sharing','gps-quality'],instruction:'직접 볼 것 · 동의·위치 공유 시작·중지 방식',guard:'위치 권한과 공유는 사용자 선택입니다. 오래되거나 부정확한 위치를 도착 근거로 삼지 않습니다.'},
+  {id:'meeting',sceneId:'meeting',actionRef:'meeting',title:'목적지 변경은 P에서',takeaway:'공유받은 위치가 내비 목적지를 바로 바꾸지는 않습니다.',description:'차량을 P 상태로 두고 위치를 검토한 뒤 목적지 변경에 직접 동의하는 화면을 보세요.',features:['destination-consent'],instruction:'직접 할 것 · 위치 미리보기 후 변경 여부 선택',guard:'기존 경로는 직접 동의 전까지 유지됩니다. 동의한 목적지는 고정된 좌표이며 아이가 움직여도 자동 변경되지 않습니다.'},
+  {id:'approach',sceneId:'approach',actionRef:'approach',title:'가까워도, 도착은 아직',takeaway:'D 근접·P 정차·정차 가능 여부를 나눠 봅니다.',description:'아이 위치 미리보기를 끝내고 기관 경로의 가상 도착 절차로 돌아갑니다. 금지·가능구역 조건을 바꿔 보세요.',features:['stop-zone','drive-park'],instruction:'직접 볼 것 · D 근접 표시와 정차구역 조건 전환',guard:'구역은 가정한 시연입니다. P 기어가 주정차 허용을 증명하지 않으며 실제 표지·시간대 확인이 필요합니다.'},
+  {id:'boarding',sceneId:'boarding',actionRef:'boarding',title:'마지막 확인은 보호자',takeaway:'문·좌석 신호만으로 탑승을 확정하지 않습니다.',description:'P와 가상 탑승 신호를 살펴본 뒤 차량 화면의 보호자 확인 버튼을 직접 눌러 보세요.',features:['sensor-candidate','guardian-confirmation'],instruction:'직접 할 것 · 차량 화면에서 보호자 확인',guard:'장면을 넘겨도 보호자 확인은 자동 실행되지 않습니다. 등원 인계 확인도 기관 입실을 증명하지 않습니다.'},
+  {id:'briefing',sceneId:'briefing',actionRef:'briefing',title:'만난 뒤, 다음 일정까지',takeaway:'오늘의 다음 약속을 짧은 음성으로 확인합니다.',description:'미디어 화면에서 오늘 일정 안내를 열어 안내문과 브라우저 음성을 체험해 보세요.',features:['voice-brief','media'],instruction:'직접 할 것 · 안내문 확인 후 한 번 듣기',guard:'음성 사용은 직접 선택합니다. 브라우저 음성이며 다른 앱 음악의 음량을 실제 제어하지 않습니다.'},
+  {id:'operations',sceneId:'operations',actionRef:'operations',title:'기다림과 변수에도 대응',takeaway:'준비 지연·정차 공간 부족을 요청과 응답으로 남깁니다.',description:'하원콜 상세와 시연 조작에서 기관 준비 선언, 문제 요청, 네 종류 기관을 살펴보세요.',features:['readiness','issue-request','institution-types'],instruction:'직접 할 것 · 준비 상태·문제 알림·시연 기관 선택',guard:'기관 응답은 가상입니다. 요청만으로 경로·일정이 변경되지 않으며 준비 완료는 탑승 완료가 아닙니다.'},
+  {id:'apps',sceneId:'apps',actionRef:'apps',title:'차량 경험 안으로 연결',takeaway:'하원콜에서 내비·미디어·차량 앱으로 오갈 수 있습니다.',description:'앱 라이브러리를 열어 기존 화면과 하원콜이 이어지는 구성을 확인해 보세요.',features:['ecosystem'],instruction:'직접 볼 것 · 앱 열기와 이전 화면으로 돌아가기',guard:'앱 셸은 웹에서 재현한 구성입니다. MyHyundai·Pleos 계정이나 차량 서비스에 실제 연결되지 않습니다.'},
+]);
+
+function createShowcaseState() { return {index:0,openedSceneIds:[]}; }
+function reduceShowcase(state, action) {
+  if (!state || !Array.isArray(state.openedSceneIds)) return createShowcaseState();
+  if (action?.type === 'SELECT' && Number.isInteger(action.index) && action.index >= 0 && action.index < SHOWCASE_STEPS.length) return {...state,index:action.index};
+  if (action?.type === 'SCENE_OPENED' && SHOWCASE_STEPS.some(s=>s.sceneId===action.sceneId)) return {...state,openedSceneIds:[...new Set([...state.openedSceneIds,action.sceneId])]};
+  return state;
+}
+/** `opened` counts navigation only; a manual action is observed separately from journey state. */
+function getShowcaseCoverage(state, journey = {}) {
+  const opened = new Set(state?.openedSceneIds || []);
+  const items = SHOWCASE_FEATURES.map(feature=>({...feature,opened:opened.has(feature.sceneId),manualObserved:feature.manualAction==='guardian-confirmation' && journey?.confirmed===true}));
+  return {items,opened:items.filter(f=>f.opened).length,total:items.length,manualConfirmationObserved:journey?.confirmed===true};
+}
+const esc = value => String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+function mountShowcase({onScene,getJourney=()=>({}),guardianOnly=false}={}) {
+  const noop={render(){},open(){},close(){},destroy(){},getState:createShowcaseState};
+  if (guardianOnly || typeof document==='undefined') return noop;
+  const toolbar=document.querySelector('.demo-toolbar');
+  if (!toolbar) return noop;
+  let state=createShowcaseState(),isOpen=false,pending=false,generation=0,lastJourney={};
+  const toggle=document.createElement('button');
+  toggle.type='button';toggle.className='showcase-toggle';toggle.textContent='직원용 시연';
+  toggle.setAttribute('aria-controls','employeeShowcase');toggle.setAttribute('aria-expanded','false');
+  (toolbar.querySelector('.toolbar-actions')||toolbar).prepend(toggle);
+  const panel=document.createElement('aside');
+  panel.id='employeeShowcase';panel.className='showcase-panel';panel.hidden=true;panel.setAttribute('aria-label','직원용 하원 경험 시연');
+  panel.innerHTML=`<header class="showcase-header"><div><span class="showcase-kicker">HAWONCALL · FAMILY PICKUP EXPERIENCE</span><h2>아이와 만나는 순간까지, 차 안에서 이어집니다.</h2></div><button type="button" class="showcase-close" aria-label="직원용 시연 닫기">×</button></header><div class="showcase-layout"><nav class="showcase-chapters" aria-label="시연 장면">${SHOWCASE_STEPS.map((s,i)=>`<button type="button" data-showcase-index="${i}"><span>${String(i+1).padStart(2,'0')}</span>${s.title}<i aria-hidden="true"></i></button>`).join('')}</nav><section class="showcase-story" aria-labelledby="showcaseTakeaway"><div class="showcase-position"></div><h3 id="showcaseTakeaway"></h3><p class="showcase-description"></p><div class="showcase-chips"></div><p class="showcase-instruction"></p><div class="showcase-actions"><button type="button" class="showcase-primary" data-showcase-open>장면 열기 <span aria-hidden="true">↗</span></button><button type="button" data-showcase-prev>이전</button><button type="button" data-showcase-next>다음 장면 →</button></div><p class="showcase-feedback" role="status" aria-live="polite"></p></section><section class="showcase-proof" aria-label="시연 확인 사항"><span class="showcase-proof-label">이 장면에서 확인할 원칙</span><p class="showcase-guard"></p><div class="showcase-manual-state"></div><p class="showcase-proof-foot">화면 열기와 동의·탑승 확인은 별개입니다.</p></section></div><footer class="showcase-footer"><details class="showcase-coverage"><summary><strong>둘러본 기능 <span data-showcase-count>0 / ${SHOWCASE_FEATURES.length}</span></strong><span>기능 목록</span></summary><ul>${SHOWCASE_FEATURES.map(f=>`<li data-showcase-feature="${f.id}"><i aria-hidden="true">○</i>${f.label}<small>아직 안 열었어요</small></li>`).join('')}</ul><p>표시는 해당 장면을 열었다는 뜻입니다. 권한 허용·저장·요청·확인 성공을 뜻하지 않습니다.</p></details><details class="showcase-scope"><summary><strong>구현 범위</strong><span>웹에서 체험 · 네이티브 소스 준비 · 실차 검증 전</span></summary><div><p><b>웹에서 체험</b> 화면 전환, 가상 주행·차량 신호·기관 응답, 일정 입력, 요청 흐름, 사용자 선택에 따른 브라우저 위치·음성. 왼쪽 도로는 경로에 따른 시각화이며 주변 차량은 가상입니다. 실차 적용 구상은 순정 시스템 주행 뷰를 유지하는 하원콜 앱 창 연동입니다.</p><p><b>네이티브 소스 준비</b> v0.11 차량·보호자·아이 앱 및 서버 소스와 빌드 자료가 있습니다. 실제 기어·좌석·도어 신호, 내비·오디오와의 실기 연결은 검증 전입니다. 양산 서비스·MyHyundai 계정 연동은 없습니다. 아이 GPS로 변경한 목적지의 후속 탑승 절차는 별도 보완이 필요합니다.</p><p><b>실차 검증 전</b> 주행 중 사용성, 통신·권한·신호 예외, 실제 정차 규제와 운영 협의. 시간 절감·안전 개선의 실측 성과는 제시하지 않습니다.</p></div></details></footer>`;
+  toolbar.insertAdjacentElement('afterend',panel);
+  const find=s=>panel.querySelector(s);
+  const status=find('.showcase-feedback');
+  function paintEvidence(journey) {
+    const coverage=getShowcaseCoverage(state,journey);
+    find('[data-showcase-count]').textContent=`${coverage.opened} / ${coverage.total}`;
+    for (const f of coverage.items) {
+      const li=find(`[data-showcase-feature="${f.id}"]`);
+      li.classList.toggle('is-opened',f.opened);li.querySelector('i').textContent=f.opened?'✓':'○';
+      li.querySelector('small').textContent=f.opened?'장면을 열었어요':'아직 안 열었어요';
+    }
+    const manual=find('.showcase-manual-state');
+    manual.textContent=journey?.confirmed===true?'현재 운행 · 보호자 확인 기록 있음':'현재 운행 · 보호자 직접 확인 전';
+    manual.classList.toggle('is-confirmed',journey?.confirmed===true);
+  }
+  function paintStep() {
+    const step=SHOWCASE_STEPS[state.index];
+    find('.showcase-position').textContent=`${String(state.index+1).padStart(2,'0')} / ${String(SHOWCASE_STEPS.length).padStart(2,'0')}  ·  ${step.title}`;
+    find('h3').textContent=step.takeaway;find('.showcase-description').textContent=step.description;
+    find('.showcase-chips').innerHTML=step.features.map(id=>`<span>${esc(SHOWCASE_FEATURES.find(f=>f.id===id).label)}</span>`).join('');
+    find('.showcase-instruction').textContent=step.instruction;find('.showcase-guard').textContent=step.guard;
+    find('[data-showcase-prev]').disabled=state.index===0||pending;
+    find('[data-showcase-next]').disabled=state.index===SHOWCASE_STEPS.length-1||pending;
+    find('[data-showcase-open]').disabled=pending;
+    panel.querySelectorAll('[data-showcase-index]').forEach((button,i)=>{
+      const current=i===state.index;button.setAttribute('aria-current',current?'step':'false');
+      button.classList.toggle('is-current',current);button.classList.toggle('is-opened',state.openedSceneIds.includes(SHOWCASE_STEPS[i].sceneId));
+      button.disabled=pending;
+    });
+    paintEvidence(lastJourney);
+  }
+  async function openScene(index) {
+    if(pending || typeof onScene!=='function') {if(typeof onScene!=='function')status.textContent='장면 연결을 확인해 주세요.';return;}
+    state=reduceShowcase(state,{type:'SELECT',index});
+    const step=SHOWCASE_STEPS[state.index],token=++generation;
+    pending=true;status.textContent='장면을 여는 중…';paintStep();
+    try {
+      const result=await onScene(step.sceneId,{stepId:step.id,source:'showcase'});
+      if(token!==generation)return;
+      if(result===false) {status.textContent='장면을 열지 못했어요. 화면 상태를 확인한 뒤 다시 시도해 주세요.';return;}
+      state=reduceShowcase(state,{type:'SCENE_OPENED',sceneId:step.sceneId});
+      status.textContent='장면을 열었어요. 화면의 직접 조작을 이어가세요.';
+    } catch {
+      if(token===generation)status.textContent='장면을 열지 못했어요. 다시 시도해 주세요.';
+    } finally {if(token===generation){pending=false;lastJourney=getJourney()||{};paintStep();}}
+  }
+  function open(){isOpen=true;panel.hidden=false;toggle.setAttribute('aria-expanded','true');lastJourney=getJourney()||{};paintStep();}
+  function close(){isOpen=false;panel.hidden=true;toggle.setAttribute('aria-expanded','false');}
+  toggle.onclick=()=>isOpen?close():open();
+  find('.showcase-close').onclick=()=>{close();toggle.focus();};
+  find('[data-showcase-open]').onclick=()=>openScene(state.index);
+  find('[data-showcase-prev]').onclick=()=>openScene(Math.max(0,state.index-1));
+  find('[data-showcase-next]').onclick=()=>openScene(Math.min(SHOWCASE_STEPS.length-1,state.index+1));
+  panel.querySelectorAll('[data-showcase-index]').forEach(button=>button.onclick=()=>openScene(Number(button.dataset.showcaseIndex)));
+  paintStep();
+  return {render(v){lastJourney=v||getJourney()||{};if(isOpen)paintEvidence(lastJourney);},open,close,destroy(){generation++;panel.remove();toggle.remove();},getState(){return {...state,openedSceneIds:[...state.openedSceneIds]};}};
+}
+
+return {SHOWCASE_FEATURES,SHOWCASE_STEPS,createShowcaseState,reduceShowcase,getShowcaseCoverage,mountShowcase};})();
+const {SHELL_APPS,createShellState,reduceShell,openShellApp,mountPleosShell,updatePleosShell,drivingMotionSnapshot,drivingRoadForProgress,drivingRoadPoint,drivingRoadGeometry,drivingLaneDash,drivingTrafficPose} = (()=>{
 /** Local, reversible application surfaces. Vehicle and journey state live elsewhere. */
 let mounted = false, shellApi, drivingScene;
 const el = id => document.getElementById(id);
@@ -1876,27 +2019,86 @@ function drivingMotionSnapshot(v, elapsedMs = 0) {
 }
 const positiveModulo = (n, d) => ((n % d) + d) % d;
 const sceneDepth = meters => 1 / (1 + meters / 18);
+const ROAD_PREVIEW_METERS = 240;
+const ROAD_EGO_METERS = 11;
+/** Recorded route preview in the same vehicle-local bearing used by the map.
+ * Road distance supplies depth; geographic lateral displacement supplies the bend.
+ * Soft lateral compression retains even a 90 degree urban turn inside this narrow
+ * illustration. This is route geometry, not sensed lanes or nearby traffic.
+ */
+function drivingRoadForProgress(coordinates, progress = 0, heading) {
+  if (!Array.isArray(coordinates) || coordinates.length < 2) return null;
+  const pose = navigationPoseForProgress(coordinates, progress);
+  const bearing = Number.isFinite(heading) ? heading : pose.heading;
+  const angle = bearing * Math.PI / 180;
+  const total = pointAlongRoute(coordinates, 1).distanceMeters || 1;
+  const latMeters = 6371008.8 * Math.PI / 180;
+  const lonMeters = latMeters * Math.cos(pose.lat * Math.PI / 180);
+  const samples = [];
+  for (let meters = 0; meters <= ROAD_PREVIEW_METERS; meters += 4) {
+    const ahead = Math.max(0, meters - ROAD_EGO_METERS);
+    const point = pointAlongRoute(coordinates, progress + ahead / total);
+    const east = (point.lon - pose.lon) * lonMeters, north = (point.lat - pose.lat) * latMeters;
+    const lateral = east * Math.cos(angle) - north * Math.sin(angle);
+    const depth = sceneDepth(meters), limit = 108 * (1 - depth);
+    const offset = limit ? limit * Math.tanh(lateral * 16 * depth / limit) : 0;
+    samples.push({meters, offset});
+  }
+  return {progress, heading: bearing, samples};
+}
+/** All painted road objects share this exact centerline, including lane traffic. */
+function drivingRoadPoint(road, meters) {
+  let offset = 0;
+  if (road?.samples?.length) {
+    const bounded = Math.max(0, Math.min(ROAD_PREVIEW_METERS, meters));
+    const index = Math.min(road.samples.length - 2, Math.floor(bounded / 4));
+    const a = road.samples[index], b = road.samples[index + 1];
+    offset = a.offset + (b.offset - a.offset) * (bounded - a.meters) / (b.meters - a.meters);
+  }
+  return [206 + offset, 110 + 470 * sceneDepth(meters)];
+}
+const svgPoint = p => p.map(n => n.toFixed(2)).join(' ');
+const svgLine = points => points.map((p, i) => `${i ? 'L' : 'M'}${svgPoint(p)}`).join(' ');
+function drivingRoadGeometry(road) {
+  const depths = [Infinity, 240, 200, 160, 128, 100, 80, 64, 52, 42, 34, 28, 22, 18, 14, 11, 8, 4, 0];
+  const edge = (meters, side, inner = false) => {
+    const [x, y] = drivingRoadPoint(road, meters), depth = sceneDepth(meters);
+    return [x + side * (inner ? 9 + 59 * depth : 23 + 183 * depth), y];
+  };
+  const left = depths.map(m => edge(m, -1)), right = depths.map(m => edge(m, 1));
+  return {surface: `${svgLine([...left, ...right.reverse()])} Z`, edges: `${svgLine(left)} ${svgLine(depths.map(m => edge(m, 1)))}`,
+    nearEdges: [-1, 1].map(side => svgLine([10, 8, 4, 0].map(m => edge(m, side, true)))).join(' ')};
+}
 /** A road marking has a fixed length in road space, so it grows as it approaches. */
-function drivingLaneDash(travel, index, side) {
+function drivingLaneDash(travel, index, side, road = null) {
   const near = positiveModulo(index * 14 - travel, 224), far = near + 5;
   const point = (meters, edge) => {
     const depth = sceneDepth(meters), width = .35 + 1.5 * depth;
-    return [206 + side * (9 + 59 * depth) + edge * width, 110 + 470 * depth];
+    const [x, y] = drivingRoadPoint(road, meters);
+    return [x + side * (9 + 59 * depth) + edge * width, y];
   };
   return [point(far, -1), point(near, -1), point(near, 1), point(far, 1)];
 }
-function drivingTrafficPose(travel, index) {
+function drivingTrafficPose(travel, index, road = null) {
   const initial = index ? 17 : 28, relativeSpeed = index ? .23 : .17;
   const meters = positiveModulo(initial - travel * relativeSpeed, 160);
-  const depth = sceneDepth(meters);
-  return { x: 206 + (index ? 162 : -162) * depth, y: 110 + 470 * depth,
-    scale: .12 + .95 * depth, opacity: Math.min(1, meters / 6, (160 - meters) / 20) };
+  const depth = sceneDepth(meters), [x, y] = drivingRoadPoint(road, meters);
+  const before = drivingRoadPoint(road, Math.max(0, meters - 2)), ahead = drivingRoadPoint(road, meters + 2);
+  const rotation = road ? Math.max(-28, Math.min(28, Math.atan2(ahead[0] - before[0], before[1] - ahead[1]) * 180 / Math.PI)) : 0;
+  return {x: x + (index ? 162 : -162) * depth, y,
+    scale: .12 + .95 * depth, opacity: Math.min(1, meters / 6, (160 - meters) / 20), rotation};
 }
 function createDrivingScene(scene) {
   if (!scene) return null;
   const ns = scene.namespaceURI, ego = scene.querySelector('#egoCar');
   const traffic = [...scene.children].filter(n => n.tagName.toLowerCase() === 'g' && n !== ego).slice(0, 2);
-  // Replace the static stroke pattern with actual projected road markings.
+  // Mutate the original road face and outlines: never stack a curved road over a
+  // straight copy. Direct-child paths exclude every nested vehicle drawing.
+  const roadPaths = [...scene.children].filter(n => n.tagName.toLowerCase() === 'path');
+  const roadFace = roadPaths[0], roadEdges = roadPaths[1], nearEdges = roadPaths[3];
+  if (roadFace) roadFace.id = 'drivingRoadSurface';
+  if (roadEdges) { roadEdges.id = 'drivingRoadEdges'; roadEdges.setAttribute('fill', 'none'); }
+  if (nearEdges) { nearEdges.id = 'drivingRoadNearEdges'; nearEdges.setAttribute('fill', 'none'); }
   const oldDashes = scene.querySelector('[stroke-dasharray]');
   const lanes = document.createElementNS(ns, 'g'); lanes.id = 'drivingLaneFlow'; lanes.setAttribute('aria-hidden', 'true');
   const marks = [];
@@ -1906,39 +2108,35 @@ function createDrivingScene(scene) {
   }
   if (oldDashes) { oldDashes.replaceWith(lanes); } else scene.insertBefore(lanes, traffic[0] || ego);
   traffic.forEach((n, i) => { n.id = `drivingTraffic${i + 1}`; });
-  let snapshot, receivedAt = 0, request = null, previousHeading, turnStart = -Infinity, turnAngle = 0;
-  const reduced = globalThis.matchMedia?.('(prefers-reduced-motion: reduce)');
+  let snapshot, receivedAt = 0, request = null;
   function paint(now) {
     request = null;
     const motion = drivingMotionSnapshot(snapshot, now - receivedAt);
-    for (const { mark, side, index } of marks) mark.setAttribute('points', drivingLaneDash(motion.travel, index, side).map(p => p.map(n => n.toFixed(2)).join(',')).join(' '));
+    const coordinates = snapshot.motionCoordinates || snapshot.route?.coordinates;
+    const total = Math.max(151, Number(snapshot.route?.totalMeters) || 2400);
+    const road = drivingRoadForProgress(coordinates, Math.min(1, motion.travel / total));
+    const shape = drivingRoadGeometry(road);
+    roadFace?.setAttribute('d', shape.surface); roadEdges?.setAttribute('d', shape.edges); nearEdges?.setAttribute('d', shape.nearEdges);
+    for (const { mark, side, index } of marks) mark.setAttribute('points', drivingLaneDash(motion.travel, index, side, road).map(p => p.map(n => n.toFixed(2)).join(',')).join(' '));
     traffic.forEach((car, i) => {
-      const p = drivingTrafficPose(motion.travel, i);
-      car.setAttribute('transform', `translate(${p.x.toFixed(2)} ${p.y.toFixed(2)}) scale(${p.scale.toFixed(3)})`);
+      const p = drivingTrafficPose(motion.travel, i, road);
+      car.setAttribute('transform', `translate(${p.x.toFixed(2)} ${p.y.toFixed(2)}) scale(${p.scale.toFixed(3)}) rotate(${p.rotation.toFixed(2)})`);
       car.setAttribute('opacity', p.opacity.toFixed(3));
     });
-    // The ego stays the navigation anchor; steering follows actual route turns.
-    const steer = reduced?.matches ? 0 : turnAngle * Math.max(0, 1 - (motion.travel - turnStart) / 25);
-    ego?.setAttribute('transform', `translate(${(206 + steer * .7).toFixed(2)} 402) rotate(${steer.toFixed(2)} 0 22)`);
+    // Vehicle-local camera: the car remains the map's stable navigation anchor.
+    ego?.setAttribute('transform', 'translate(206 402)');
     scene.dataset.motion = motion.active ? 'playing' : 'paused';
     scene.dataset.travelMeters = motion.travel.toFixed(2);
+    scene.dataset.routeHeading = road ? road.heading.toFixed(2) : '';
     if (motion.active && !document.hidden) request = requestAnimationFrame(paint);
   }
-  return { update(v) {
+  return {update(v) {
     if (request !== null) cancelAnimationFrame(request);
-    const motion = drivingMotionSnapshot(v), heading = Number(v.motionHeading);
-    if (motion.travel < (snapshot ? drivingMotionSnapshot(snapshot).travel : 0)) {
-      turnAngle = 0; turnStart = -Infinity;
-    } else if (Number.isFinite(heading) && Number.isFinite(previousHeading)) {
-      const change = positiveModulo(heading - previousHeading + 180, 360) - 180;
-      if (Math.abs(change) > 1) { turnAngle = Math.max(-3, Math.min(3, change * .07)); turnStart = motion.travel; }
-    }
-    previousHeading = Number.isFinite(heading) ? heading : undefined;
     snapshot = v; receivedAt = performance.now(); paint(receivedAt);
-  } };
+  }};
 }
 
-return {SHELL_APPS,createShellState,reduceShell,openShellApp,mountPleosShell,updatePleosShell,drivingMotionSnapshot,drivingLaneDash,drivingTrafficPose};})();
+return {SHELL_APPS,createShellState,reduceShell,openShellApp,mountPleosShell,updatePleosShell,drivingMotionSnapshot,drivingRoadForProgress,drivingRoadPoint,drivingRoadGeometry,drivingLaneDash,drivingTrafficPose};})();
 (()=>{const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const source=globalThis.crypto?.randomUUID?.()||Math.random().toString(36).slice(2);
 const initial=()=>createInitialState({now:Date.now(),route:REAL_ROUTE,playbackRate:1});
@@ -1950,11 +2148,48 @@ let storageAvailable=true;try{const p=JSON.parse(localStorage.getItem(DEMO_STORA
 const map=createRoadMap($('#mapViewport'),{route:{...REAL_ROUTE,destination:'대치동 학원(시연)'},statusElement:$('#mapStatus'),onFollowChange:syncFollow,maplibre:childOnly?null:globalThis.maplibregl});
 const operations=mountOperations({getJourney:()=>{const v=view({...state,now:Date.now()});return {...v,turnDistanceMeters:guidanceForProgress(REAL_ROUTE,v.progress).distanceMeters};},guardianOnly,source,toast,route:REAL_ROUTE});
 mountPleosShell({map,toast,openBrief:()=>operations.openBrief()});
-let driveControls;
+let driveControls,showcase;
 function syncFollow(enabled){follow=enabled;$('#orientation').classList.toggle('active',enabled);$('#orientation').setAttribute('aria-pressed',String(enabled));$('#orientation').setAttribute('aria-label',enabled?'차량 따라가는 중':'차량 위치로 돌아가기');}
 const liveGPS=mountLiveGPS({map,route:REAL_ROUTE,getJourney:()=>view({...state,now:Date.now()}),toast,onPause:()=>send('PAUSE'),childOnly,guardianOnly});
 const stopZones=mountStopZone({getJourney:()=>view({...state,now:Date.now()}),hasMeetingPreview:()=>liveGPS.hasMeetingPreview(),guardianOnly});
 driveControls=mountDriveControls({getJourney:()=>view({...state,now:Date.now()}),play:()=>send('PLAY'),pause:()=>send('PAUSE'),reset, setRate:rate=>send('PLAYBACK_RATE',{rate}),openNavigation:()=>{openShellApp('navigation');follow=true;map.follow(true);},guardianOnly});
+showcase=mountShowcase({onScene:openPresentationScene,getJourney:()=>view({...state,now:Date.now()}),guardianOnly});
+function openPresentationScene(id){
+  operations.stop('장면이 바뀌어 음성 안내를 멈췄어요.');
+  $$('dialog[open]').forEach(d=>d.close());
+  $('#simulationDrawer').hidden=true;$('#drawerToggle').setAttribute('aria-expanded','false');
+  driveControls.setRepeat(false);
+  if(state.playing)send('PAUSE');
+  if(id==='guardian'){switchView('guardian');return true;}
+  if(id==='child'){switchView('child');return true;}
+  switchView('vehicle');
+  if(id==='start'){openShellApp('navigation');reset();send('PLAYBACK_RATE',{rate:3});send('PLAY');liveGPS.startDemo();return true;}
+  if(id==='meeting'){
+    if(state.confirmed||state.routeMismatch)reset();
+    send('PARK');openShellApp('navigation');
+    if(!liveGPS.startDemo())return false;
+    map.focusLiveTarget();liveGPS.openMeeting();return true;
+  }
+  if(id==='approach'){
+    liveGPS.stop('기관 경로 시연으로 돌아왔어요.');
+    if(state.confirmed||state.routeMismatch)reset();
+    openShellApp('navigation');stopZones.setScenario('prohibited');send('APPROACH');
+    $('#simulationDrawer').hidden=false;$('#drawerToggle').setAttribute('aria-expanded','true');return true;
+  }
+  if(id==='boarding'){
+    liveGPS.stop('기관 경로에서 탑승 확인을 시연해요.');
+    if(state.confirmed||state.routeMismatch)reset();
+    stopZones.setScenario('unknown');send('APPROACH');send('PARK');send('SENSOR');
+    openShellApp('hawon');openConfirm();return true;
+  }
+  if(id==='briefing'){if(state.gear!=='P')send('PARK');openShellApp('media');operations.openBrief();return true;}
+  if(id==='operations'){
+    if(state.gear!=='P')send('PARK');openShellApp('hawon');operations.showPanel('readiness');
+    $('#simulationDrawer').hidden=false;$('#drawerToggle').setAttribute('aria-expanded','true');return true;
+  }
+  if(id==='apps'){if(state.gear!=='P')send('PARK');openShellApp('library');return true;}
+  return false;
+}
 function publish(){if(guardianOnly)return;const p=packDemoState(state,source,revision=Math.max(Date.now(),revision+1));try{localStorage.setItem(DEMO_STORAGE_KEY,JSON.stringify(p));}catch{storageAvailable=false;}try{channel?.postMessage(p);}catch{}lastPublish=performance.now();}
 function receive(p){if(p?.source===source||p?.revision<=revision)return;const restored=restoreDemoState(p,initial());if(!restored)return;state=restored;revision=p.revision;render();}
 if(channel)channel.onmessage=e=>receive(e.data);
@@ -1974,7 +2209,7 @@ function render(){
  const v=view({...state,now:Date.now()}), drop=v.mode==='dropoff', noun=v.institutionLabel, destination=`대치동 ${noun}(시연)`, done=v.confirmed,near=v.near,parked=v.arrival,mins=Math.max(1,Math.ceil(v.etaSeconds/60));
  const confirmWord=drop?'인계':'탑승', confirmObject=drop?'인계를':'탑승을', movement=v.institution==='school'?(drop?'등교':'하교'):(drop?'등원':'하원');
  $('#institution').value=v.institution;$$('[data-mode]').forEach(b=>{b.classList.toggle('selected',b.dataset.mode===v.mode);b.setAttribute('aria-pressed',String(b.dataset.mode===v.mode));b.innerHTML=(v.institution==='school'?(b.dataset.mode==='dropoff'?'등교':'하교'):(b.dataset.mode==='dropoff'?'등원':'하원'))+' <small>'+ (b.dataset.mode==='dropoff'?'DROPOFF':'PICKUP')+'</small>';});
- updatePleosShell({...v,motionHeading:navigationPoseForProgress(REAL_ROUTE.coordinates,v.progress).heading});driveControls?.render(v);
+ updatePleosShell({...v,motionHeading:navigationPoseForProgress(REAL_ROUTE.coordinates,v.progress).heading,motionCoordinates:REAL_ROUTE.coordinates});driveControls?.render(v);
  $('#modeLabel').textContent=movement;$('#destinationName').textContent=destination;$('#childContext').textContent=`${noun} · 시연 데이터`;map.setDestination?.(destination);
  $('#speed').textContent=Math.round(v.speedKph);$('#gear').textContent=v.gear;$('#clock').textContent=new Date().toLocaleTimeString('ko-KR',{hour:'2-digit',minute:'2-digit',hour12:false});
  $('#etaText').textContent=parked||done?`P 주차 · ${confirmWord} ${done?'확인 완료':'확인 전'}`:`약 ${mins}분 · ${fmtDistance(v.remainingMeters)} · 시연 ETA`;
@@ -2013,7 +2248,7 @@ function render(){
  $('#guardianRule').textContent=drop?'기관 담당자에게 아이를 직접 인계한 보호자가 차량 화면에서 확인해요. 모바일 화면은 일정·요청을 작성하고, 차량에서만 직접 인계를 확정해요.':'아이의 실제 탑승을 직접 확인한 보호자가 차량 화면에서 확인해요. 모바일 화면은 일정·요청을 작성하고, 차량에서만 직접 탑승을 확정해요.';
  $('#syncStatus').textContent=storageAvailable?'같은 브라우저의 시연 상태 동기화':'이 화면에서 시연 가능 · 브라우저 저장소 제한';
  $('#confirmTitle').innerHTML=drop?'아이를 담당자에게<br>직접 인계했나요?':'아이의 실제 탑승을<br>직접 확인했나요?';$('#confirmDescription').textContent=drop?'기관 담당자에게 아이를 직접 인계했는지 보호자가 확인해 주세요. 문·좌석 센서는 기관 입실을 증명하지 않아요.':'아이의 실제 차량 탑승을 눈으로 확인한 뒤 눌러주세요. 문·착석 신호는 확인 후보일 뿐이에요.';$('#confirmGuardian').textContent=`네, ${confirmObject} 확인했어요`;
- if(!v.canConfirm&&$('#confirmDialog').open)$('#confirmDialog').close();map.setProgress(v.progress);operations.render();liveGPS.render();stopZones.render(v);
+ if(!v.canConfirm&&$('#confirmDialog').open)$('#confirmDialog').close();map.setProgress(v.progress);operations.render();liveGPS.render();stopZones.render(v);showcase?.render(v);
 }
 $('#institution').onchange=e=>{send('SCENARIO',{institution:e.target.value});follow=true;$('#orientation').classList.add('active');map.follow(true);toast('기관 종류만 바뀌며 같은 시연 위치와 경로를 사용해요.');};
 $$('[data-mode]').forEach(b=>b.onclick=()=>{send('SCENARIO',{mode:b.dataset.mode});follow=true;$('#orientation').classList.add('active');map.follow(true);});
@@ -2034,6 +2269,7 @@ document.addEventListener('keydown',e=>{if(guardianOnly)return;if($$('dialog').s
 new ResizeObserver(()=>{if(activeView==='vehicle')map.resize();}).observe($('.navigation'));
 if(guardianOnly)document.body.classList.add('guardian-only');switchView(activeView);render();
 syncFollow(map.isFollowing());
+if(!guardianOnly&&new URL(location.href).searchParams.get('present')==='1')showcase.open();
 if(!guardianOnly)setInterval(()=>{send('HEARTBEAT');},5000);
 function frame(t){const dt=t-lastFrame;lastFrame=t;if(state.playing&&!guardianOnly){state=reduce(state,{type:'TICK',now:Date.now(),dtMs:dt});map.setProgress(state.progress);if(t-lastPublish>400)publish();}if(t-lastPaint>300){render();lastPaint=t;}requestAnimationFrame(frame);}requestAnimationFrame(frame);
 })();
